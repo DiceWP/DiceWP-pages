@@ -4,14 +4,16 @@ sidebar: auto
 ---
 
  ## help 帮助
+ 
+ `help [指令]` 查看详细帮助
 
 指令一览:　
 
 | 投掷 | 属性 | 调查员 | 频道    |   杂项 |
 | ---- | ---- | ----- | ------- | ----- |
 | r    | set  | nn    | setcoc  | ti/li |
-| ra   | st   | pc    | welcome | stats |
-| sc   | en   | coc   |         |       |
+| ra   | st   | pc    | welcome | jrrp  |
+| sc   | en   | coc   |         | stats |
 
  > 实际指令不需要添加任何括号，[参数]指代需要输入的参数，(可选)表示该参数可省略  
    顶级指令后可不加空格 `r d`=`rd`，其余参数请以空格分隔
@@ -43,7 +45,9 @@ sidebar: auto
 
  - `sc 1d10/1d100 30`
  
- > 当调用调查员理智时，理智会自动更新为sc后的剩余值 //程序上可以损失负数的理智，也就是可以用.sc-1d6/-1d6来回复理智，但请避免这种奇怪操作 //大失败自动失去最大理智，由setcoc判定
+ > 当调用调查员理智时，理智会自动更新为sc后的剩余值  
+   程序上可以损失负数的理智，也就是可以用.sc-1d6/-1d6来回复理智，但请避免这种奇怪操作  
+   大失败自动失去最大理智，由setcoc判定
  
  
  ## set 设置默认骰
@@ -62,7 +66,7 @@ sidebar: auto
  - `st 力量 +1d8`
  - `st show 意志` //查看属性
  - `st del 敏捷` //删除属性
- - `st clr` //清空调查员属性  
+ - `st clr` //清空属性  
  - `st show` //查看全部属性
  
  > st内置了部分同义词，如"san/理智" "str/力量"，如有补充，可前往官方频道反馈
@@ -101,7 +105,7 @@ sidebar: auto
 `coc(d)([生成数量])`
 
  - `coc 10` //生成7版人物
- - `cocd` //详细生成，一次只能生成一个
+ - `coc d` //详细生成，一次只能生成一个
  
  ## setcoc 设置COC房规
  
@@ -140,14 +144,21 @@ sidebar: auto
  
 > 适用coc7版规则
 
+ ## jrrp 今日人品
+ 
+ `jrrp`
+ 
+ 获取一些奇奇怪怪的人品
+ 
+ > 如果有好的jrrp建议，欢迎加入官方频道反馈！
+
  ## stats 数据统计
  
  `stats ([me/guild/global]) ([clr])`
  
  - `stats` //查看频道统计数据，私信则自身
- - `stats me` //查看自身
+ - `stats me` //查看自身统计
  - `stats guild` //查看频道
  - `stats global` //查看全局
  - `stats me clr` //清除自身统计
  - `stats guild clr` //清除频道统计 **需要管理员**
- - `stats global clr` //❔
