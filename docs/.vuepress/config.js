@@ -9,6 +9,12 @@ module.exports = {
             {text: '疯狂症状', link: '/mad'},
 
         ],
+        repo: 'DiceWP/DiceWP-pages',
+        repoLabel: 'Github',
+        editLinks: true,
+        editLinkText: '在GitHub上编辑此页',
+        docsBranch: 'main',
+        docsDir: 'docs'
     },
     plugins:
         [
