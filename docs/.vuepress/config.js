@@ -4,7 +4,7 @@ module.exports = {
     description: '来一场刺激的跑团吧！',
     themeConfig: {
         nav: [
-            // {text: '主页', link: '/'},
+            {text: '主页', link: '/'},
             {text: '使用手册', link: '/guide'},
             {text: '疯狂症状', link: '/mad'},
 
