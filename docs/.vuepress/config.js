@@ -31,8 +31,6 @@ module.exports = {
             ],
         ],
     dest: 'docs',
-    host:
-        'localhost',
-    port:
-        8080
+    host: 'localhost',
+    port: 8080
 }
